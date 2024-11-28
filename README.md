@@ -12,13 +12,15 @@ Commands
 Automated Features
 
 	•Daily Reports
-	The bot automatically sends weather updates to a designated channel twice a day:
-	•	Morning Report: Sent at 8:00 AM.
-	•	Evening Report: Sent at 10:00 PM.
-	•	Alert Notifications
-The send_alerts function monitors weather alerts for the specified cities and sends them to the Discord channel.
-	•	Alerts are stored in a set to prevent duplicate messages and spamming.
-	•	This ensures that only new alerts are sent, keeping the channel concise and informative.
+	     -The bot automatically sends weather updates to a designated channel twice a day:
+		•Morning Report: Sent at 8:00 AM.
+		•Evening Report: Sent at 10:00 PM.
+	•Alert Notifications
+	      -The send_alerts function monitors weather alerts for the specified cities and 
+                sends them to the Discord channel.
+		•Alerts are stored in a set to prevent duplicate messages and spamming.
+		•This ensures that only new alerts are sent, keeping the channel concise and 
+                informative.
 
 PM2 Integration
 
