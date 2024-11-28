@@ -1,2 +1,27 @@
 # DiscordBot
-Discord Bot has 3 commands you can issue in a discord channel. Those being "!weather" which sends out a daily report for the day it's also important to mention that it's currently set up only to send reports for 4 cities those being Portland, Houston, San Antonio, and Orlando. The other commands are "!weather" which sends out the current weather for those cities and the last being "!humidity" which sends out the temperature as well as the humidity for that day. The script is managed by a PM2 bot for two reasons one to respond and send out reports from the commands I mentioned above but also to monitor and send out reports based on time. For example, the script is written to send out a morning report of the weather at 8:00 AM every day as well as at 10:00 PM. The other function that is like this is "send_alerts" This function sends alerts to the discord whenever there is an alert in one of the cities mentioned above. It also stores those alerts in a set so that we are able to stop spamming from occurring in the channel and compare alerts before they get sent to a channel.
+This Discord bot updates the weather for four cities: Portland, Houston, San Antonio, and Orlando. It offers three primary commands and automated reporting features, all managed by a PM2 process for reliability.
+
+Commands
+	1.	!weather
+	•	Sends a daily weather report for the specified cities.
+	2.	!current
+	•	Provides the current weather conditions for the specified cities.
+	3.	!humidity
+	•	Displays the temperature and humidity levels for the current day in the specified cities.
+
+Automated Features
+
+	•	Daily Reports
+The bot automatically sends weather updates to a designated channel twice a day:
+	•	Morning Report: Sent at 8:00 AM.
+	•	Evening Report: Sent at 10:00 PM.
+	•	Alert Notifications
+The send_alerts function monitors weather alerts for the specified cities and sends them to the Discord channel.
+	•	Alerts are stored in a set to prevent duplicate messages and spamming.
+	•	This ensures that only new alerts are sent, keeping the channel concise and informative.
+
+PM2 Integration
+
+The bot is managed using PM2, which enables:
+	1.	Reliable response handling for the commands mentioned above.
+	2.	Scheduled execution of the daily reports and alert notifications.
