@@ -11,8 +11,8 @@ Commands
 
 Automated Features
 
-	•	Daily Reports
-The bot automatically sends weather updates to a designated channel twice a day:
+	•Daily Reports
+	The bot automatically sends weather updates to a designated channel twice a day:
 	•	Morning Report: Sent at 8:00 AM.
 	•	Evening Report: Sent at 10:00 PM.
 	•	Alert Notifications
